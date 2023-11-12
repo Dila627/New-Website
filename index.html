@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="header">
@@ -18,7 +19,8 @@
         <!-- NavBar -->
         <nav>
             <a href="index.html"><img src="img/logo.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                      <li><a href="index.html">Home</a></li>
                      <li><a href="about.html">About</a></li>
@@ -28,15 +30,170 @@
                     
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-         <!-- NavBar End-->
-
+           <!-- Collection-->
         <div class="text-box">
             <h1> Collorful Big World!</h1>
             <p>Make your own beautiful responsive website for free with the best website builder.10,000+ free website templates.  <br> WYSIWYG, Easy & Fast - No coding!</p>
         <a href="collection.html" class="hero-btn"> Visit Us to know More</a>
         </div>
     </section>
+    <section class="collection">
+        <h1> Collection</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         
+        <div class="row">
+            <div class="collection-col">
+                <h3>Mega Hot Colors</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatum nihil, odio omnis eligendi adipisci dolore eaque dolores tenetur modi, error ipsa, necessitatibus nisi aperiam at sequi recusandae fuga similique.</p>
+            </div>
+
+            <div class="collection-col">
+                <h3>Winter Colors</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatum nihil, odio omnis eligendi adipisci dolore eaque dolores tenetur modi, error ipsa, necessitatibus nisi aperiam at sequi recusandae fuga similique.</p>
+            </div>
+
+            <div class="collection-col">
+                <h3>Warm Colors</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatum nihil, odio omnis eligendi adipisci dolore eaque dolores tenetur modi, error ipsa, necessitatibus nisi aperiam at sequi recusandae fuga similique.</p>
+            </div>
+        </div>
+
+    </section>
+
+  <!-- About section-->
+
+    <section class="about">
+        <h1>About us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="about-col"> <img src="img/3558.jpg" >
+                <div class="layer"><h3>PURPLE</h3>
+                </div>
+            </div>
+            <div class="about-col">
+                 <img src="img/3558.jpg" >
+                 <div class="layer">
+                    <h3>LOVE</h3>
+                </div>
+            </div>
+                    <div class="about-col">
+                        <img src="img/3558.jpg" >
+                        <div class="layer">
+                            <h3>BLUE</h3>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+    </section>
+
+      <!-- Facilities section-->
+
+      <section class="facilities">
+        <h1> Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="img/new image background.png" alt="">
+                <h3>World Top Colors</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempora voluptatibus necessitatibus obcaecati voluptas laudantium facilis repellendus blanditiis sequi corporis dolore, libero incidunt asperiores accusamus quis? Laudantium quidem dolore magnam!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/new image background.png" alt="">
+                <h3>Pretty Love</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempora voluptatibus necessitatibus obcaecati voluptas laudantium facilis repellendus blanditiis sequi corporis dolore, libero incidunt asperiores accusamus quis? Laudantium quidem dolore magnam!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/new image background.png" alt="">
+                <h3>History our Company</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempora voluptatibus necessitatibus obcaecati voluptas laudantium facilis repellendus blanditiis sequi corporis dolore, libero incidunt asperiores accusamus quis? Laudantium quidem dolore magnam!</p>
+            </div>
+            
+        </div>
+
+      </section>
+
+           <!--Testimonials-->
+
+           <section class="testimonials">
+            <h1>What our Clients Says </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+             
+            <div class="row">
+                <div class="testimonials-col">
+                    <img src="" alt="">
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium deserunt, provident ipsum atque repellendus accusamus explicabo alias doloribus voluptas praesentium aliquam possimus quae, animi corrupti excepturi nam corporis ea.
+                        </p>
+                        <h3>
+                            Christine Baker
+                        </h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="testimonials-col">
+                    <img src="" alt="">
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium deserunt, provident ipsum atque repellendus accusamus explicabo alias doloribus voluptas praesentium aliquam possimus quae, animi corrupti excepturi nam corporis ea.
+                        </p>
+                        <h3>
+                            David Bayer
+                        </h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+
+            </div>
+
+           </section>
+
+           <!--~Call to Action-->
+           <section class="cta">
+            <h1>Enroll For Our Various Online Courses<br>Anywhere From The World</h1>
+            <a href="contact.html" class="hero-btn">CONTACT US</a>
+           </section>
+
+             <!--~Footer-->
+
+             <section class="footer">
+            <h4> About us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptate ratione necessitatibus dolore et quisquam, fugiat blanditiis, modi,<br>nesciunt consectetur distinctio vel! Voluptates dignissimos excepturi nemo dolorum quidem. Id, suscipit.</p>
+           <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+           </div>
+           <p> Made with  <i class="fa fa-heart-o"></i> by Dilara Bakhishova</p>
+          </div>
+        </section>
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0"
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px"
+        }
+
+    </script>
    
     </body>
 </html>
