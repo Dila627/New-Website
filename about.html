@@ -4,33 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 
-  <section class="header">
+  <section class="sub-header">
 
     <!-- NavBar -->
     <nav>
         <a href="index.html"><img src="img/logo.png"></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                  <li><a href="index.html">Home</a></li>
                  <li><a href="about.html">About</a></li>
                  <li><a href="collection.html">Collection</a></li>
                  <li><a href="blog.html">Blog</a></li>
                  <li><a href="contact.html">Contact</a></li>
-                
             </ul>
         </div>
+        <i class="fa-bars" onclick="showmenu()"></i>
     </nav>
-     <!-- NavBar End-->
+    <h1>About Us</h1>  
+  </section>
+  <!-- About us content-->
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We are the world's largest fashion web</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Repudiandae praesentium, voluptate impedit modi quod dolore dicta dolor optio placeat minus,
+       deserunt beatae voluptates totam, in consequuntur delectus ducimus. Porro, suscipit.</p>
+       <a href="" class="hero-btn red-btn">Explore Now</a>
+      </div>
+      <div class="about-col">
+        <img src="img/about us .jpg">
+      </div>
+    </div>
 
-    <div class="text-box"></div>
+  </section>
+  
+  <!--~Footer-->
+  <section class="footer">
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <p> Made with  <i class="fa fa-heart-o"></i> by Dilara Bakhishova</p>
+  </section>
+   
 </section>
 </body>
 </html>
