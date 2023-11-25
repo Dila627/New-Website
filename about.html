@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
 
+
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="index.css">
+  <!--===============================================================================================-->
+<link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600;1,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
 
@@ -19,19 +20,20 @@
 
     <!-- NavBar -->
     <nav>
-        <a href="index.html"><img src="img/logo.png"></a>
-        <div class="nav-links" id="navLinks">
+      <a href="index.html"><img src="img/logo.png"></a>
+      <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="about.html">About</a></li>
-                 <li><a href="collection.html">Collection</a></li>
-                 <li><a href="blog.html">Blog</a></li>
-                 <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <i class="fa-bars" onclick="showmenu()"></i>
-    </nav>
+          <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="collection.html">Collection</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="contact.html">Contact</a></li>
+              
+          </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
     <h1>About Us</h1>  
   </section>
   <!-- About us content-->
@@ -63,5 +65,15 @@
   </section>
    
 </section>
+<script>
+  var navLinks = document.getElementById("navLinks")
+  function showMenu(){
+      navLinks.style.right="0"
+  }
+  function hideMenu(){
+      navLinks.style.right="-200px"
+  }
+
+</script>
 </body>
 </html>
